@@ -1,2 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;800&display=swap');
 
+// Variables
+//    Primary
+$pale_blue: #e0e8ff;
+$bright_blue: #3829e0;
+//    Neutral
+$very_pale_blue: #f5f7ff;
+$desaturated_blue: #7280a7;
+$dark_blue: #1f2f56;
 
+// Global
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    font-size: inherit;
+    border: none;
+    background: inherit;
+} 
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    min-height: 100vh;
+}
+
+// Card
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    height: 900px;
+    background: $pale_blue url("../images/pattern-background-mobile.svg") no-repeat;
+    background-size: cover;
+    padding: 1.5rem;
+    box-shadow: 0 2rem 3rem rgba(0,0,0,0.1);
+
+}
+@media (min-width: 40em) {
+    .container {
+        background: $pale_blue url("../images/pattern-background-desktop.svg") no-repeat;
+    }
+}
+.card {
+    max-width: 450px;
+    background: #fff;
+    border-radius: 1.3rem;
+    box-shadow: 0 0px 50px rgba(0,0,0,0.3);
+    color: $desaturated_blue;
+    font-family: 'Red Hat Display', sans-serif;
+
+    & > img {
+        border-radius: 1.3rem 1.3rem 0 0;
+        width: 100%;
+    }
+    h1 {
+        font-weight: 800;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: $dark_blue;
+    }
+    h2 {
+        color: $dark_blue;
+        font-weight: 700;
+    }
+    button {
+        cursor: pointer;
+    }
+    .content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        gap: 2rem;
+        margin: 2rem;   
+        text-align: center;
+    }
+    .summary {
+        display: flex;
+        text-align: left;
+        padding: 1.5rem 1rem;
+        background: $very_pale_blue;
+        border-radius: 0.7rem;
+        .product {
+            flex: 1;
+            margin-left: 1.3rem;
+        }
+    }
+    .btn {
+        display: block;
+        background: $bright_blue;
+        color: $very_pale_blue;
+        font-size: 0.975rem;
+        font-weight: 700;
+        padding: 1rem 0;
+        border-radius: 0.7rem;
+        box-shadow: 0 1.2rem 1rem #3829e02c;
+        &:hover {
+            background: #3829e0ad;
+        }
+    }
+    .btn-cancel {
+        font-weight: 700;
+        font-size: 0.975rem;
+        &:hover {
+            color: $dark_blue;
+        }
+    }
+    .btn-plan {
+        font-weight: 700;
+        font-size: 0.9rem;
+        text-decoration: underline;
+        color: $bright_blue;
+        &:hover {
+            color: #3829e0ad;
+            text-decoration: none;
+        }
+    }
+}
