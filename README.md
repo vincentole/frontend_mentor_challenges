@@ -1,4 +1,4 @@
-# frontend_mentor_challenges
+# Frontend Mentor Challenges
 My submissions to the Frontend Mentor Challenges
   
 See them live here:
