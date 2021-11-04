@@ -14,7 +14,7 @@
 
         <title>Frontend Mentor | Base Apparel coming soon page</title>
     </head>
-    <body>
+    <body class="preload">
         <div class="logo-container margin-wrap-lf">
             <img src="./images/logo.svg" alt="logo" />
         </div>
@@ -34,6 +34,10 @@
         </main>
         <div class="hero-img bg-img"></div>
         <script>
+          // Prevent animation on page load
+          setTimeout( () => document.body.classList.remove("preload"), 500);
+
+          // Form validation
           const form = document.getElementById("form");
           const email = document.getElementById("email");
 

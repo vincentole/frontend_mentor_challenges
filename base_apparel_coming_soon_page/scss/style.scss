@@ -15,7 +15,7 @@ $dark_grayish_red: #413a3a;
 $gradient_white: linear-gradient(135deg , hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 $gradient_red: linear-gradient(135deg , hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 
-
+// Reset Styles
 * {
     margin: 0;
     padding: 0;
@@ -30,8 +30,12 @@ $gradient_red: linear-gradient(135deg , hsl(0, 80%, 86%), hsl(0, 74%, 74%));
         background: inherit;
     }
 } 
+// Prevent Animations on page load
+body.preload * {
+    transition: all 0s !important;
+}
 
-
+// Page Styling
 body {
     font-family: $font-default;
     min-height: 100vh;
