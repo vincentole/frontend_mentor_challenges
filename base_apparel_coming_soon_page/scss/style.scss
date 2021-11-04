@@ -162,6 +162,17 @@ form.error {
 
 @media (min-width: 60em) { 
     body {
+        .margin-wrap-lf {
+            width: 50%;
+        }
+        h1 {
+            font-size: 4.3rem;
+        }
+    }
+}
+
+@media (min-width: 43em) { 
+    body {
             grid-template-columns: 57fr 43fr;
             grid-template-rows:  20fr 80fr;
         }
@@ -188,10 +199,10 @@ form.error {
         .margin-wrap-lf {
             margin: 0;
             margin-left: -5rem;
-            width: 50%;
+            width: 60%;
         }
         h1 {
-            font-size: 4.3rem;
+            font-size: 4rem;
             
         }
         p {
@@ -203,9 +214,9 @@ form.error {
         }
         .error-icon {
             right: 6.5rem;
-        }
-        
+        }    
 }
+
 @media (min-width: 32em) {
     button {
         padding: 1rem 2.5rem;    
