@@ -57,7 +57,7 @@ body {
     font-size: 12px;
     border-radius: 1.5rem;
     box-shadow: 0 3rem 3rem rgba(0,0,0,0.3);
-    margin: 0 1rem;
+    margin: 8rem 1rem 1rem 1rem;
 }
 
 // Accordion
@@ -143,6 +143,7 @@ p {
         background: #fff url("../images/bg-pattern-desktop.svg") no-repeat;
         background-size: 60%;
         background-position: -47% 10px;
+        margin: 0 1rem;
     }
     .accordion-container {
         align-items: flex-start;
