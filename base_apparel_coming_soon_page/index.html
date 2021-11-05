@@ -27,8 +27,8 @@
             </p>
             <form action="" name="email-form" id="form">
                 <input id="email" name="email" type="email" placeholder="Email Address" />
-                <img class="error-icon" src="./images/icon-error.svg" alt="" />
-                <button type="submit"><img src="./images/icon-arrow.svg" alt=""/></button>
+                <img class="error-icon" src="./images/icon-error.svg" alt="arrow icon" />
+                <button type="submit"><img src="./images/icon-arrow.svg" alt="submit"/></button>
                 <small>Please provide a valid email</small>
             </form>
         </main>
@@ -40,11 +40,11 @@
           // Form validation
           const form = document.getElementById("form");
           const email = document.getElementById("email");
-
+          
           form.addEventListener("submit", e => {
             e.preventDefault();
             const emailVal = email.value;
-
+            console.log(emailVal);
             if (!validateEmail(emailVal)) {
               form.classList.add("error");
 
@@ -55,7 +55,9 @@
           
           const validateEmail = (email) => {
             var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            console.log(re.test(String(email)));
             return re.test(String(email));
+            
           };
 
         </script>
