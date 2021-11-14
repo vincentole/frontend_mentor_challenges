@@ -1,61 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./img/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<script defer src="./js/main.js"></script>
+		<title>Frontend Mentor | Sunnyside agency landing page</title>
+	</head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/style.css">
-  <script defer src="./js/main.js"></script> 
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
+	<body>
+		<header>
+            <img src="./img/desktop/image-header.jpg" alt="Orange" />
+			<nav>
+				<div class="logo"><img src="./img/logo.svg" alt="logo"></div>
+				<ul class="nav__pages">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#" class="btn">Contact</a></li>
+				</ul>
+			</nav>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>we are creatives</h1>
+                    <img src="./img/icon-arrow-down.svg" alt="arrow down" />
+                </div>
+            </div>
+            
+		</header>
+		<main>
+			<section class="services">
+				<div class="grid-element text left">
+					<h1>Transform your brand</h1>
+					<p>
+						We are a full-service creative agency specializing in
+						helping brands grow fast. Engage your clients through
+						compelling visuals that do most of the marketing for
+						you.
+					</p>
+                    <div class="button-wrap"><a href="#">Learn more</a></div>
+					
+				</div>
+				<div class="grid-element img">
+					<img src="./img/desktop/image-transform.jpg" alt="Egg" />
+				</div>
+				<div class="grid-element img">
+					<img src="./img/desktop/image-stand-out.jpg" alt="Glass" />
+				</div>
+				<div class="grid-element text right">
+					<h1>Stand out to the right audience</h1>
+					<p>
+						Using a collaborative formula of designers, researchers,
+						photographers, videographers, and copywriters, we’ll
+						build and extend your brand in digital places.
+					</p>
+					<div class="button-wrap"><a href="#">Learn More</a></div>
+				</div>
+				<div class="grid-element img-text graphic-design">
+					<h2>Graphic design</h2>
+					<p>
+						Great design makes you memorable. We deliver artwork
+						that underscores your brand message and captures
+						potential clients’ attention.
+					</p>
+				</div>
+				<div class="grid-element img-text photography right">
+					<h2>Photography</h2>
+					<p>
+						Increase your credibility by getting the most stunning,
+						high-quality photos that improve your business image.
+					</p>
+				</div>
+			</section>
+			<section class="testimonials">
+				<h3>Client Testimonials</h3>
+				<div class="testimonials__card">
+					<img
+						src="./img/image-emily.jpg"
+						alt="Emily R."
+						class="profile"
+					/>
+					<p>
+						We put our trust in Sunnyside and they delivered, making
+						sure our needs were met and deadlines were always hit.
+					</p>
+					<div class="position">
+						<strong>Emily R.</strong>
+						<small>Marketing Director</small>
+					</div>
+				</div>
+				<div class="testimonials__card">
+					<img
+						src="./img/image-thomas.jpg"
+						alt="Thomas S."
+						class="profile"
+					/>
+					<p>
+						Sunnyside’s enthusiasm coupled with their keen interest
+						in our brand’s success made it a satisfying and
+						enjoyable experience.
+					</p>
+					<div class="position">
+						<strong>Thomas S.</strong>
+						<small>Chief Operating Officer</small>
+					</div>
+				</div>
 
-</head>
-<body>
-  About
-  Services
-  Projects
-  Contact
-
-  We are creatives
-
-  Transform your brand
-
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
-
-  Learn more
-
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
-
-  
-</body>
+				<div class="testimonials__card">
+					<img
+						src="./img/image-jennie.jpg"
+						alt="Jennie F."
+						class="profile"
+					/>
+					<p>
+						Incredible end result! Our sales increased over 400%
+						when we worked with Sunnyside. Highly recommended!
+					</p>
+					<div class="position">
+						<strong>Jennie F.</strong>
+						<small>Business Owner</small>
+					</div>
+				</div>
+			</section>
+			<section class="img-bar">
+                <img src="./img/desktop/image-gallery-milkbottles.jpg" alt="milk bottles">
+                <img src="./img/desktop/image-gallery-orange.jpg" alt="orange">
+                <img src="./img/desktop/image-gallery-cone.jpg" alt="ice cream cone">
+                <img src="./img/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes">
+            </section>
+		</main>
+		<footer>
+			<div class="logo"><img src="./img/logo.svg" alt="logo"></div>
+			<nav>
+				<ul class="nav__pages">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Projects</a></li>
+				</ul>
+				<ul class="nav__social">
+					<li>
+						<a href="#"
+							><img src="./img/icon-facebook.svg" alt="facebook"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="./img/icon-instagram.svg"
+								alt="instagram"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img src="./img/icon-twitter.svg" alt="twitter"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="./img/icon-pinterest.svg"
+								alt="pinterest"
+						/></a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+	</body>
 </html>
