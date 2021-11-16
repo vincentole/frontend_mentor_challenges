@@ -105,13 +105,14 @@ Will group CSS
 
 %font-testimonials-name {
   color: $clr-very_dark_desaturated_blue;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 900;
 }
 
 %font-testimonials-job{
   font-size: 1rem;
   color: $clr-grayish_blue;
+  font-family:  $barlow;
 }
 
 %font-testimonials-p {
