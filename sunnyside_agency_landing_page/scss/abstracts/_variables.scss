@@ -1,0 +1,31 @@
+// Fonts
+$barlow: 'Barlow', sans-serif;
+$fraunces: 'Fraunces', serif;
+
+// Font Sizing
+$baseFontSize      : 1rem;
+$baseLineHeight    : 1.5;
+
+// Colors
+    // Primary
+$clr-yellow: hsl(51%, 100%, 49%);
+$clr-soft_red: hsl(7, 99%, 70%);
+$clr-yellow: hsl(51%, 100%, 49%);
+$clr-dark_desaturated_cyan: hsl(167, 40%, 24%); // (graphic design text)
+$clr-dark_blue: hsl(198, 62%, 26%); // (photography text)
+$clr-dark_moderate_cyan: #90d4c5; // (footer)
+$clr-dark_cyan: #307868; // (footer text)
+    // Neutral
+$clr-very_dark_desaturated_blue: hsl(212, 27%, 19%);
+$clr-very_dark_grayish_blue: hsl(213, 9%, 39%);
+$clt-dark_grayish_blue: hsl(232, 10%, 55%);
+$clr-grayish_blue: hsl(210, 4%, 67%);
+    
+
+// Spacing
+$pad : 1em;
+
+// Breakpoints
+$smallBreakpoint : 730px;
+$largeBreakpoint : 1080px;
+

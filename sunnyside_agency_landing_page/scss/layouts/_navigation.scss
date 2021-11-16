@@ -1,0 +1,86 @@
+// Navigation Styles
+
+.main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2.3rem 1.7rem;
+    ul {
+        display: none;
+        @extend %font-navbar;
+    }
+    &.nav-mobile ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 32rem;
+        width: 100%;
+        background-color: #fff;
+        padding: 2rem;
+        z-index: 10;
+        @extend %font-navbar-mobile;
+        li {
+            padding: 1rem 0;
+        }
+    }
+
+}
+.main-nav__triangle.nav-mobile {
+    display: none;
+}
+.main-nav__triangle.nav-mobile {
+    display: block;
+    position:absolute;
+    top: 3.7rem;
+    right: 0;
+    border-left: 1.7rem solid transparent;
+    border-bottom:1.7rem solid #fff;
+    width: 1rem;
+    height: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav__mobile-btn {
+    width: 25px;
+    cursor: pointer;
+}
+
+
+
+@media (min-width: $smallBreakpoint) {
+    .main-nav ul {
+        display: flex;
+        margin: 0;
+    }
+    .main-nav__mobile-btn,
+    .main-nav__triangle {
+        display: none;
+    }
+    
+    .main-nav {
+        margin: 2rem;
+        li {
+            display: flex;
+            align-items: center;
+            padding: 0 1.5rem;
+            &:last-child {
+                padding-right: 1rem;
+            }
+        }
+        
+    }
+    .logo {
+        width: 11rem;
+    }
+
+}

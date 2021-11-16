@@ -1,0 +1,32 @@
+.image-roll .desktop {
+    display: none;
+}
+
+.image-roll {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    img {
+        object-fit: cover;
+        aspect-ratio: 1;
+    }
+}
+
+
+
+
+@media (min-width: 700px) {
+    .image-roll .desktop {
+        display: inline-block;
+    }
+    .image-roll .mobile {
+        display: none;
+    }
+    .image-roll {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        overflow: hidden;
+    }
+}

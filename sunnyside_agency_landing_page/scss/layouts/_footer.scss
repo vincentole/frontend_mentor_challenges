@@ -1,0 +1,54 @@
+// Footer Styles
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+    background-color: $clr-dark_moderate_cyan;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.footer__logo {
+    width: 85%;
+
+    img {
+        filter: invert(40%) sepia(10%) saturate(2551%) hue-rotate(116deg) brightness(88%) contrast(78%);
+    }
+    
+}
+
+.footer__nav-pages ul,
+.footer__nav-social ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.footer__nav-pages ul {
+    gap: 3rem;
+    a {
+        @extend %font-footer-nav;
+    }
+    a:hover {
+        color: #fff;
+    }
+}
+
+.footer__nav-social ul {
+    gap: 2rem;
+
+    img {
+        width: 20px;
+        filter: brightness(0) saturate(100%) invert(40%) sepia(10%) saturate(2551%) hue-rotate(116deg) brightness(88%) contrast(78%);
+    }
+    img:hover {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(4deg) brightness(104%) contrast(101%);
+    }
+}

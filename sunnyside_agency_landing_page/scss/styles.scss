@@ -1,0 +1,32 @@
+// Vendor
+@import "vendor/normalize";
+
+// Abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+@import "abstracts/fonts";
+// @import "abstracts/functions";
+
+// Base
+@import "base/reset";
+@import "base/typography";
+@import "base/global";
+
+// Layout
+@import "layouts/navigation";
+@import "layouts/header";
+@import "layouts/services";
+@import "layouts/testimonials";
+@import "layouts/footer";
+@import "layouts/image-roll";
+
+// Components
+@import "components/container";
+@import "components/btn";
+@import "components/services-box__text-box";
+@import "components/services-box__img-text-box";
+@import "components/testimonials__card";
+
+
+

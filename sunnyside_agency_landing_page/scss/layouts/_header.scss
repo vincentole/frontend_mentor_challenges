@@ -1,0 +1,76 @@
+// Header Styles
+.banner {
+    display: flex; // to have no gap between header and first picture
+    position: relative;
+}
+
+.banner__text-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 29vw;
+    left: 0;
+    right: 0;
+    margin-top: 2.5rem;
+
+    h1 {
+        @extend %font-banner;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    
+    img {
+        width: 10%;
+    }
+}
+
+@media (min-width: 320px) {
+    .banner__text-container {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media (min-width: $smallBreakpoint) {
+    .banner__text-container {
+        top: 11vw;        
+        
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            letter-spacing: 0.26ch;
+            margin-bottom: 5rem;
+        }
+
+        img {
+            width: 3%;
+        }
+    }
+}
+
+@media (min-width: 1500px) {
+    .banner__text-container {
+        top: 10rem;
+    }
+}
+
+
+
+.banner .desktop {
+    display: none;
+}
+
+
+
+@media (min-width: $smallBreakpoint) {
+    .banner .desktop {
+        display: block;
+    }
+
+    .banner .mobile {
+        display: none;
+    }
+}

@@ -1,0 +1,128 @@
+// Placeholders
+/*
+Will group CSS
+%center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  @extend %center;
+}
+.image-cover {
+  @extend %center;
+}
+--->
+.container, .image-cover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+*/
+
+%font-navbar {
+  font-size: 1.1rem;
+  color: #fff;
+  font-family: $barlow;
+
+}
+
+%font-navbar-mobile {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: $clr-very_dark_desaturated_blue;
+  font-family: $barlow;
+  
+}
+
+%font-btn-mobile {
+  font-family: $fraunces;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+}
+
+%font-banner {
+  font-family: $fraunces;
+  font-size: 10vw;
+  line-height: 1.2;
+  letter-spacing: 0.2ch;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+%font-services-h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 2rem;
+  color: $clr-very_dark_desaturated_blue;
+}
+
+%font-services-p {
+  font-family: $barlow;
+  color: $clr-very_dark_grayish_blue;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+%font-btn-learn-more {
+  color: $clr-very_dark_desaturated_blue;
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+%font-graphic-design-p {
+  color: $clr-dark_desaturated_cyan;
+  font-size: 1.2rem;
+}
+
+%font-graphic-design-h1 {
+  color: $clr-dark_desaturated_cyan;
+  font-size: 2.4rem;  
+}
+
+%font-photography-p {
+  color: $clr-dark_blue;
+  font-size: 1.2rem;
+}
+
+%font-photography-h1 {
+  color: $clr-dark_blue;
+  font-size: 2.4rem; 
+}
+
+%font-testimonials-h1 {
+  font-size: 1.4rem;
+  text-align: center;
+  letter-spacing: 0.25ch;
+  font-weight: 900;
+  color: $clr-grayish_blue;
+}
+
+%font-testimonials-name {
+  color: $clr-very_dark_desaturated_blue;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+%font-testimonials-job{
+  font-size: 1rem;
+  color: $clr-grayish_blue;
+}
+
+%font-testimonials-p {
+  font-family: $barlow;
+  color: $clr-very_dark_grayish_blue;
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+
+%font-footer-nav {
+  color: $clr-dark_cyan;
+  font-size: 1.4rem;
+  font-family: $barlow;
+}

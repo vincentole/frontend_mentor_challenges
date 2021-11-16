@@ -1,0 +1,24 @@
+.btn {
+    display: inline-block;
+    background-color: $clr-yellow;
+    padding: 1rem 2.2rem;
+    border-radius: 2rem;
+    @extend %font-btn-mobile
+}
+
+
+@media (min-width: $smallBreakpoint) {
+    .btn {
+        padding: 1rem 1.8rem;
+        color: $clr-very_dark_desaturated_blue;
+        background-color: #fff;
+        font-size: .95rem;
+        font-weight: 900;
+        transition: opacity 0.3s ease;
+        
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+}

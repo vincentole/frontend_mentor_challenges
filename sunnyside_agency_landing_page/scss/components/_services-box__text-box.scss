@@ -1,0 +1,59 @@
+.services-box__text-box {
+    padding: 4.4rem 1.5rem;
+    text-align: center;
+    h1 {
+        @extend %font-services-h1;
+    }
+    p {
+        @extend %font-services-p;
+    }
+}
+
+.services-box__btn {
+    display: inline-block;
+    position:relative;
+    @extend %font-btn-learn-more;
+    margin-top: 1rem;
+    a {
+        position: relative;
+        z-index: 10;
+        
+        &:hover + div {
+            opacity: 1;
+        }
+    }
+    
+    div {
+        height: 1rem;
+        background-color: $clr-yellow;
+        opacity: 0.5;
+        border-radius: 1rem;
+        position: absolute;
+        bottom: -5%;
+        left: 0;
+        right: 0;
+        transition: opacity 0.3s ease;
+        z-index: 0;
+    }
+    
+}
+
+.stand-out .services-box__btn {
+    div {
+        background-color: $clr-soft_red;
+    }
+}
+
+@media (min-width: 1000px) {
+    .transform .services-box__text-box {
+        text-align: left;
+        margin: 12% 5% 5% 20%;
+    }
+
+    .stand-out .services-box__text-box {
+        text-align: left;
+        margin: 12% 20% 5% 12%;
+    }
+}
+
+

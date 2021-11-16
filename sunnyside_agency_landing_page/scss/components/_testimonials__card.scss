@@ -1,0 +1,39 @@
+.testimonials__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
+    margin-top: 4.5rem;
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+        width: 70px;
+        border-radius: 50%;
+    }
+    p {
+        @extend %font-testimonials-p;
+        margin: 0 2rem;
+        
+
+    }
+}
+.testimonials__name {
+    display: flex;
+    flex-direction: column;
+
+    strong {
+        @extend %font-testimonials-name;
+
+    }
+    small {
+        @extend %font-testimonials-job;
+    }
+}
+
+
+// @media (min-width: 700px) {
+    
+// }

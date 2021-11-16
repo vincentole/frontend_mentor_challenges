@@ -1,0 +1,44 @@
+.services-box__img-text-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    margin-bottom: 5%;
+    background: transparent;
+}
+
+.services-box.graphic-design p {
+    @extend %font-graphic-design-p;
+}
+.services-box.graphic-design h1 {
+    @extend %font-graphic-design-h1;
+}
+
+
+.services-box.photography p {
+    @extend %font-photography-p; 
+}
+.services-box.photography h1 {
+    @extend %font-photography-h1; 
+    
+}
+
+
+@media (min-width: 375px) {
+    .services-box__img-text-box {
+        margin: 0 10% 20vw 10%;
+    }   
+}
+
+@media (min-width: 600px) {
+    .services-box__img-text-box {
+        margin: 0 20vw 10vw 20vw;
+    }
+}
+
+@media (min-width: 1000px) {
+    .services-box__img-text-box {
+        margin: 0 15%;
+    }
+}
