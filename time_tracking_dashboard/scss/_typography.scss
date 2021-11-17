@@ -1,0 +1,16 @@
+html {
+	font-size: 0.875rem;
+
+	@media only screen and (min-width: $smallBreakpoint) {
+		font-size: 0.925rem;
+	}
+
+	@media only screen and (min-width: $largeBreakpoint) {
+		font-size: 1rem;
+	}
+}
+
+// Header Styles
+
+
+// Text Styles

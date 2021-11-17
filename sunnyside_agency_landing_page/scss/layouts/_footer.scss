@@ -35,6 +35,7 @@ footer {
     gap: 3rem;
     a {
         @extend %font-footer-nav;
+        transition: color 0.5s ease-in-out;
     }
     a:hover {
         color: #fff;
