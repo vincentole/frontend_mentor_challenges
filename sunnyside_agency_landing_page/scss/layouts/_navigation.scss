@@ -60,6 +60,11 @@
 .main-nav__mobile-btn {
     width: 25px;
     cursor: pointer;
+
+    &:hover {
+        -webkit-animation: pulsate-fwd 0.5s ease-in-out both;
+	        animation: pulsate-fwd 0.5s ease-in-out both;
+    }
 }
 
 
@@ -91,3 +96,5 @@
     }
 
 }
+
+
