@@ -1,0 +1,35 @@
+.time-tracker__work {
+    background-color: $clr-soft_orange;
+    background-image: url("../images/icon-work.svg");
+    
+}
+
+.time-tracker__play {
+    background-color: $clr-soft_blue;
+    background-image: url("../images/icon-play.svg");
+    
+}
+
+.time-tracker__study {
+    background-color: $clr-light_red;
+    background-image: url("../images/icon-study.svg");
+    
+}
+
+.time-tracker__exercise {
+    background-color: $clr-lime_green;
+    background-image: url("../images/icon-exercise.svg");
+    background-position: 95% 0;
+}
+
+.time-tracker__social {
+    background-color: $clr-violet;
+    background-image: url("../images/icon-social.svg");
+    
+}
+
+.time-tracker__self-care {
+    background-color: $clr-soft_yellow;
+    background-image: url("../images/icon-self-care.svg");
+    
+}

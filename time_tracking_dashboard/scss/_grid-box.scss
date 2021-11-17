@@ -1,0 +1,100 @@
+.time-tracker__box {
+    background-repeat: no-repeat;
+    background-position: 95% -10px;
+    border-radius: $border-radius-default;
+    display: flex;
+    align-items: flex-end;
+    .svg-wrap {
+        cursor: pointer;
+        
+        &:hover svg {
+            fill: #fff;
+            transform: scale(1.2);
+            transform: rotate(360deg);
+        }
+    }
+    svg {
+        fill: #BBC0FF;
+        transition: 0.5s ease-in-out;
+        transition-property: fill, transform;
+    }
+
+    .display {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 80%;
+        background-color: $clr-dark_blue;
+        border-radius: $border-radius-default;
+        padding: 0 1.65rem;
+        margin-bottom: -2px; // to hide background glitches
+        cursor: pointer;
+        transition: background-color 0.5s ease-in-out;
+
+        &:hover {
+            background-color: $clr-desaturated_blue_dark;
+        }
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-weight: 500;
+            font-size: 1.25rem;
+            margin: 0.5rem 0;
+        }
+        
+    }
+
+    .details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.8rem;
+
+        h1 {
+            font-weight: 300;
+            font-size: 2.25rem;
+            margin: 0;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 1.1rem;
+            color: $clr-pale_blue;
+        }
+        
+    }
+    
+}
+
+
+@media (min-width: $largeBreakpoint) {
+    .time-tracker__box {
+        .display {
+            gap: 1.5rem;
+        }
+        .main {
+            padding: 0rem 0;
+            
+            h1 {
+                font-size: 1.2rem;
+            }
+        }
+
+        .details {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0;
+            h1 {
+                font-size: 3.5rem;
+            }
+
+        }
+    }
+    
+}

@@ -2,7 +2,7 @@
 @import "normalize";
 
 // Abstracts
-@import "variables";
+@import "abstracts";
 @import "typography";
 
 // Base
@@ -10,11 +10,12 @@
 @import "global";
 
 // Layout
-
+@import "layouts";
 
 // Components
-
-
+@import "grid-box";
+@import "profile";
+@import "grid-box_specific";
 
 
 
