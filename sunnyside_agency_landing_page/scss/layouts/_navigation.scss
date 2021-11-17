@@ -24,26 +24,33 @@
         background-color: #fff;
         padding: 2rem;
         z-index: 10;
+        opacity: 0;
+        &.opacity-1 {
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
         @extend %font-navbar-mobile;
         li {
             padding: 1rem 0;
         }
     }
-
-}
-.main-nav__triangle.nav-mobile {
-    display: none;
 }
 .main-nav__triangle.nav-mobile {
     display: block;
     position:absolute;
-    top: 3.7rem;
+    top: 3.47rem;
     right: 0;
     border-left: 1.7rem solid transparent;
     border-bottom:1.7rem solid #fff;
     width: 1rem;
     height: 1rem;
+    opacity: 0;
+    &.opacity-1 {
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+    }
 }
+
 
 .logo {
     display: flex;
