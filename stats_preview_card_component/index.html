@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+            rel="stylesheet"
+			crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/tailwind.css" />
+        <title>Frontend Mentor | Stats preview card component</title>
+    </head>
+
+    <body class="min-h-screen bg-primary-darkBlue pt-16 md:pt-[9.5rem] ">
+
+		<!-- Main Start -->
+        <main class="flex justify-center md:min-h-[491px]">
+
+			<!-- Container Start -->
+            <div class="m-6 bg-primary-desatBlue text-neutral-white rounded-lg max-w-[69rem] md:flex md:flex-row-reverse">
+
+				<!-- Main Image Start -->
+				<div class="flex-1">
+					<img
+						class="md:hidden rounded-t-lg w-full object-cover object-center"
+						src="./images/image-header-mobile.jpg"
+						alt="people working on their laptop"
+					/>
+					<img
+						class="hidden md:block rounded-r-lg object-cover object-right w-full h-full"
+						src="./images/image-header-desktop.jpg"
+						alt="people working on their laptop"
+					/>
+				</div>
+				<!-- Main Image End -->
+	
+				<!-- Content Start -->
+				<div class="mt-8 text-center px-4 flex-1 sm:px-20 md:px-4 md:flex md:flex-col md:justify-center md:items-start md:text-left">
+					<h1 class="font-lexend font-bold text-3xl md:text-4xl md:px-14">Get
+						<span class="text-primary-softViolet">insights</span>
+						that help your business grow.
+					</h1>
+					<p class="text-neutral-whiteA75 text-base py-4 px-4 md:pb-16 md:px-14">
+						Discover the benefits of data analytics and make better
+						decisions regarding revenue, customer experience, and
+						overall efficiency.
+					</p>
+
+					<!-- Details Start -->
+					<ul class="flex flex-col items-center py-6 space-y-6 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-14 sm:px-14">
+						<li>
+							<span class="font-inter font-bold text-2xl">10k+</span
+							><br /><span
+								class="
+									font-inter
+									text-neutral-whiteA60
+									uppercase
+									text-sm
+								"
+								>companies</span
+							>
+						</li>
+						<li>
+							<span class="font-inter font-bold text-2xl">314</span
+							><br /><span
+								class="
+									font-inter
+									text-neutral-whiteA60
+									uppercase
+									text-sm
+								"
+								>templates</span
+							>
+						</li>
+						<li>
+							<span class="font-inter font-bold text-2xl">12M+</span
+							><br /><span
+								class="
+									font-inter
+									text-neutral-whiteA60
+									uppercase
+									text-sm
+								"
+								>queries</span
+							>
+						</li>
+					</ul>
+					<!-- Details End -->
+				</div>
+				<!-- Content End -->
+			</div>
+				<!-- Container End  -->
+        </main>
+        <!-- Main End -->
+    </body>
+</html>
