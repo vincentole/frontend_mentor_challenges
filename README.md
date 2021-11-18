@@ -8,3 +8,4 @@ See them live here:
 * [Base Apparel coming soon page](https://wonderful-lalande-92aa8d.netlify.app/)
 * [Sunnyside Agency Landing Page](https://youthful-thompson-0a66b9.netlify.app/)
 * [Time Tracking Dashboard](https://affectionate-shirley-5af682.netlify.app/)
+* [Stats Preview Card Component](https://gifted-lewin-05a94f.netlify.app/)
