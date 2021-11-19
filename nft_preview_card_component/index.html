@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="stylesheet" href="./css/tailwind.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet" crossorigin="anonymous"/>
+        
+        <title>Frontend Mentor | NFT preview card component</title>
+    </head>
+    <body class="flex justify-center items-center font-outfit bg-neutral-darkBlue pt-[60px]">
+        <!-- Temp Start -->
+        <!-- <img src="./design/mobile-design.jpg" alt="" class="absolute left-0 top-0 opacity-50"> -->
+        <!-- Temp End -->
+
+        <!-- Main Component Start -->
+        <main class="max-w-[325px] bg-neutral-desatDarkBlue rounded-2xl mx-4">
+            <!-- Main Image Start -->
+            <div class="h-3/5 p-5">
+                <img src="./images/image-equilibrium.jpg" alt="glowing cube" class="rounded-lg w-full h-full object-cover object-center"/>
+            </div>
+            <!-- Main Image End -->
+
+            <!-- Content Start -->
+            <div class="h-2/5 px-[1.4rem]">
+                <h1 class="text-white text-xl text-[22px] font-semibold py-1">Equilibrium #3429</h1>
+                <p class="text-primary-softBlue py-2 leading-[1.6rem]">Our Equilibrium collection promotes balance and calm.</p>
+
+                <!-- Offer Start -->
+                <div class="flex items-center justify-between py-2 border-b border-neutral-dividerBlue">
+                    <span class="flex items-center text-primary-cyan">
+                        <svg class="fill-current text-primary-cyan" width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" /></svg>
+                        &nbsp; 0.041 ETH
+                    </span>
+                    <span class="flex items-center text-primary-softBlue">
+                        <svg class="fill-current text-primary-softBlue" width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" /></svg>
+                        &nbsp; 3 days left
+                    </span>
+                </div>
+                <!-- Offer End -->
+
+                <!-- Profile Start -->
+                <div class="flex items-center py-5">
+                    <img class="w-[34px] h-[34px] object-cover object-center border rounded-full mr-[14px]" src="./images/image-avatar.png" alt="profile picture" />
+                    <span class="text-primary-softBlue text-[15px]">Creation of &nbsp;</span>
+                    <span class="text-white text-[15px]">Jules Wyvern</span>
+                </div>
+                <!-- Profile End -->
+            </div>
+            <!-- Content End -->
+        </main>
+        <!-- Main Component End -->
+    </body>
+</html>
