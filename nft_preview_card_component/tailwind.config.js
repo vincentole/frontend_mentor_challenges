@@ -18,6 +18,9 @@ module.exports = {
             fontFamily: {
                 outfit: "'Outfit', sans-serif",
             },
+            transitionProperty: {
+                "bg-color": "background-color",
+            },
         },
     },
     variants: {

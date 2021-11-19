@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="./css/tailwind.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet" crossorigin="anonymous"/>
-        
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet" crossorigin="anonymous" />
+
         <title>Frontend Mentor | NFT preview card component</title>
     </head>
     <body class="flex justify-center items-center font-outfit bg-neutral-darkBlue pt-[60px]">
@@ -22,13 +22,26 @@
         <main class="max-w-[325px] bg-neutral-desatDarkBlue rounded-2xl mx-4">
             <!-- Main Image Start -->
             <div class="h-3/5 p-5">
-                <img src="./images/image-equilibrium.jpg" alt="glowing cube" class="rounded-lg w-full h-full object-cover object-center"/>
+                <!-- Img and Overlay Start -->
+                <div class="relative group">
+                    <div class="absolute inset-0 flex justify-center items-center cursor-pointer rounded-lg bg-primary-cyan opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+                    <div class="absolute inset-0 flex justify-center items-center cursor-pointer rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h48v48H0z" />
+                                <path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z" fill="#FFF" fill-rule="nonzero" />
+                            </g>
+                        </svg>
+                    </div>
+                    <!-- Img Overlay End -->
+                    <img src="./images/image-equilibrium.jpg" alt="glowing cube" class="rounded-lg w-full h-full object-cover object-center" />
+                </div>
             </div>
             <!-- Main Image End -->
 
             <!-- Content Start -->
             <div class="h-2/5 px-[1.4rem]">
-                <h1 class="text-white text-xl text-[22px] font-semibold py-1">Equilibrium #3429</h1>
+                <h1 class="text-white text-xl text-[22px] font-semibold py-1 hover:text-primary-cyan transition-colors duration-500"><a href="#">Equilibrium #3429</a></h1>
                 <p class="text-primary-softBlue py-2 leading-[1.6rem]">Our Equilibrium collection promotes balance and calm.</p>
 
                 <!-- Offer Start -->
@@ -48,7 +61,7 @@
                 <div class="flex items-center py-5">
                     <img class="w-[34px] h-[34px] object-cover object-center border rounded-full mr-[14px]" src="./images/image-avatar.png" alt="profile picture" />
                     <span class="text-primary-softBlue text-[15px]">Creation of &nbsp;</span>
-                    <span class="text-white text-[15px]">Jules Wyvern</span>
+                    <a href="#" class="text-white text-[15px] hover:text-primary-cyan transition-colors duration-500">Jules Wyvern</a>
                 </div>
                 <!-- Profile End -->
             </div>
