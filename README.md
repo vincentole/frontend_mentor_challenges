@@ -9,3 +9,5 @@ See them live here:
 * [Sunnyside Agency Landing Page](https://youthful-thompson-0a66b9.netlify.app/)
 * [Time Tracking Dashboard](https://affectionate-shirley-5af682.netlify.app/)
 * [Stats Preview Card Component](https://gifted-lewin-05a94f.netlify.app/)
+* [Article Preview Component](https://lucid-mccarthy-03c11b.netlify.app/)
+* [NFT Preview Card Componen](https://xenodochial-hopper-dafaea.netlify.app/)
